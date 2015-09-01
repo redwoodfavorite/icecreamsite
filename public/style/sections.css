@@ -1,0 +1,32 @@
+div.outlined {
+	/*border: 2px solid black;*/
+}
+
+div.press-header {
+	padding-bottom: 45px;
+}
+
+img.feed-image {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+div#songs-section {
+	padding: 0px 15px;
+}
+
+.light-shadow {
+	box-shadow: 5px 5px 11px #8E8E8E;
+}
+
+div.press-container img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+div.press-container {
+	background-color: white;
+	padding: 15px 30px;
+	margin-bottom: 50px;
+}
+
