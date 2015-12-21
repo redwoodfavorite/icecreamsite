@@ -11,39 +11,85 @@ module.exports = '<img class="feed-image light-shadow" src="./images/feed/profil
     '<img class="feed-image light-shadow" src="./images/feed/tapes.jpg" />\n' +
     '';
 },{}],2:[function(require,module,exports){
-module.exports = '<div class="outlined light-shadow press-container">\n' +
+module.exports = '\n' +
+    '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
-    '		<h1> Perfect Tunes for a Summer Weekend Party , Meet – Ice Cream </h1>\n' +
-    '		<h3> August 28, 2015 </h3>\n' +
+    '		<h1>San Franpsycho Winter Lookbook 2015</h1>\n' +
+    '		<h3>November 2015</h3>\n' +
     '	</div>\n' +
-    '	<p>\n' +
-    '		So crank this up as you head towards the beach or wherever your plans might take you to. I dig this band they’re a very cool mix of sounds that I have loved over the years…cool stuff\n' +
+    '	<p>San Franpsycho Clothing chose Wild to be the song in their new winter catalog\n' +
     '	</p>\n' +
     '	<p>\n' +
-    '		<a href="http://www.50thirdand3rd.com/perfect-tunes-for-a-summer-weekend-party-meet-ice-cream/?utm_source=dlvr.it&utm_medium=facebook"> -50Thirdand3rd </a>\n' +
+    '		<a href="http://sanfranpsycho.com/winter-2015/">-San Franpsycho </a>\n' +
     '	</p>\n' +
     '</div>\n' +
     '\n' +
     '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
-    '		<h1> Get to Know: Ice Cream [Feature] </h1>\n' +
-    '		<h3> April 8, 2015 </h3>\n' +
+    '		<h1>Perfect Tunes for a Summer Weekend</h1>\n' +
+    '		<h3>September 2015</h3>\n' +
     '	</div>\n' +
-    '	<p>\n' +
-    '		The music of Ice Cream may not be as innocently sweet as the treat they’re named after, but they’ll certainly delight anyone with even a passing interest in garage rock.\n' +
+    '	<p>...They have a little nod to The Kinks, The Stooges, and they play some wicked garage rock.\n' +
     '	</p>\n' +
     '	<p>\n' +
-    '		<a href="http://thebaybridged.com/2015/04/08/get-know-ice-cream/#.VVMUm7jBzRY"> -The Bay Bridged </a>\n' +
+    '		<a href="http://www.50thirdand3rd.com/perfect-tunes-for-a-summer-weekend-party-meet-ice-cream">-Fifty-third &amp; Third</a>\n' +
     '	</p>\n' +
     '</div>\n' +
     '\n' +
     '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
-    '		<h1> Side One Track One [Feature] </h1>\n' +
-    '		<h3> November 19, 2014 </h3>\n' +
+    '		<h1>&ldquo;Wild&rdquo; Video Premiere</h1>\n' +
+    '		<h3>August 2015</h3>\n' +
     '	</div>\n' +
+    '	<p>...the somehow tender melody comes shoving through anyway (not the least thanks to a good bottom end), like that just drunk enough lonely guy deciding, “Screw it!” he’s going to get through the crowd and ask that girl out.\n' +
+    '	</p>\n' +
     '	<p>\n' +
-    '		You expect a certain sound when you hear of a band called Ice Cream. You expect the sound of summer, or maybe you expect bubbly, refreshing pop ‘n’ roll or maybe you just expect it to be a bunch of teenage girls in sparkly pantsuits dancing to a pre-recorded beat. Ice Cream is just about none of these...\n' +
+    '		<a href="https://www.cmj.com/video-premiere-ice-cream-wild/">-CMJ</a>\n' +
+    '	</p>\n' +
+    '</div>\n' +
+    '\n' +
+    '<div class="outlined light-shadow press-container">\n' +
+    '	<div class="press-header">\n' +
+    '		<h1>KQED Summer Mixtape</h1>\n' +
+    '		<h3>June 2015</h3>\n' +
+    '	</div>\n' +
+    '	<p>...you’ll hear some beach-ready garage rock and surf-inspired sounds, like those of Ice Cream, Jet Trash and Union Pacific, mixing jangly reverb and big, hooky melodies.\n' +
+    '	</p>\n' +
+    '	<p>\n' +
+    '		<a href="http://ww2.kqed.org/arts/2015/06/23/mixtape-san-francisco-songs-for-summer/">-KQED</a>\n' +
+    '	</p>\n' +
+    '</div>\n' +
+    '\n' +
+    '<div class="outlined light-shadow press-container">\n' +
+    '	<div class="press-header">\n' +
+    '		<h1>Shindignation loves Ice Cream</h1>\n' +
+    '		<h3>June 2015</h3>\n' +
+    '	</div>\n' +
+    '	<p>The band sits down with the hosts of Shindignation and talks about being a band in the city and releasing on Wiener Records\n' +
+    '	</p>\n' +
+    '	<p>\n' +
+    '		<a href="http://www.shindignation.co/showz/2015/6/8/june-06/">-Shindignation</a>\n' +
+    '	</p>\n' +
+    '</div>\n' +
+    '\n' +
+    '<div class="outlined light-shadow press-container">\n' +
+    '	<div class="press-header">\n' +
+    '		<h1>Get to Know: Ice Cream</h1>\n' +
+    '		<h3>April 2015</h3>\n' +
+    '	</div>\n' +
+    '	<p>...The music of Ice Cream may not be as innocently sweet as the treat they’re named after, but they’ll certainly delight anyone with even a passing interest in garage rock.\n' +
+    '	</p>\n' +
+    '	<p>\n' +
+    '		<a href="http://thebaybridged.com/2015/04/08/get-know-ice-cream/#.VVMUm7jBzRY">-The Bay Bridged Magazine</a>\n' +
+    '	</p>\n' +
+    '</div>\n' +
+    '\n' +
+    '<div class="outlined light-shadow press-container">\n' +
+    '	<div class="press-header">\n' +
+    '		<h1>Side One Track One</h1>\n' +
+    '		<h3>November 2014 </h3>\n' +
+    '	</div>\n' +
+    '	<p>You expect a certain sound when you hear of a band called Ice Cream. You expect the sound of summer, or maybe you expect bubbly, refreshing pop ‘n’ roll or maybe you just expect it to be a bunch of teenage girls in sparkly pantsuits dancing to a pre-recorded beat. Ice Cream is just about none of these...\n' +
     '	</p>\n' +
     '	<p>\n' +
     '		<a href="http://sideonetrackone.com/2014/11/ice-cream-noah/"> -Side One Track One </a>\n' +
@@ -52,11 +98,10 @@ module.exports = '<div class="outlined light-shadow press-container">\n' +
     '\n' +
     '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
-    '		<h1> KALW Today\'s Local Music [Feature] </h1>\n' +
-    '		<h3> November 11, 2014 </h3>\n' +
+    '		<h1>KALW Today\'s Local Music </h1>\n' +
+    '		<h3>November 2014 </h3>\n' +
     '	</div>\n' +
-    '	<p>\n' +
-    '		We\'re having some of our warmest weather of the year, so how about some Ice Cream?  Not the dairy treat, the band you\'re hearing now.\n' +
+    '	<p>We\'re having some of our warmest weather of the year, so how about some Ice Cream?  Not the dairy treat, the band you\'re hearing now.\n' +
     '	</p>\n' +
     '	<p>\n' +
     '		<a href="http://kalw.org/post/todays-local-music-ice-cream"> -KALW </a>\n' +
