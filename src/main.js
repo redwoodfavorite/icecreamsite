@@ -5,6 +5,8 @@ var templates = {
 	shows: require('../public/templates/shows.html')
 }
 
+var facebookScript = require('./fbscript');
+
 window.onload = function init()  {
 	var songsButton      = document.getElementById('songs-button');
 	var picturesButton   = document.getElementById('pictures-button');
@@ -17,7 +19,6 @@ window.onload = function init()  {
 	var sectionContainer = document.querySelector('.section-container');
 	var footer           = document.querySelector('footer');
 	var backButton       = document.getElementById('back');
-	var scrollIcon       = document.getElementById('scroll-icon');
 
 	var stickyState = true;
 	var scrollY = 0;
@@ -25,16 +26,17 @@ window.onload = function init()  {
 	var max = 250;
 	var stickyPos;
 
-	songsButton.onclick    = switchSection.bind(null, 'songs');
+	songsButton.onclick    = switchSection.bind(null, 'songs', facebookScript);
 	picturesButton.onclick = switchSection.bind(null, 'pictures');
 	pressButton.onclick    = switchSection.bind(null, 'press');
 	showsButton.onclick    = switchSection.bind(null, 'shows');
 
 	handleScroll();
-	switchSection('songs');
+	switchSection('songs', facebookScript);
 
-	function switchSection(section) {
+	function switchSection(section, script) {
 		sectionContainer.innerHTML = templates[section];
+		setTimeout(script, 300);
 
 		if (scrollY > stickyPos) {
 			scrollY = stickyPos;
@@ -75,7 +77,6 @@ window.onload = function init()  {
 			logo.style.opacity = 1 - progress;
 			footer.style.bottom = (-40 + 60 * progress) + "px";
 			backButton.style.top = (-170 + 200 * progress) + "px";
-			scrollIcon.style.opacity = 1 - progress;
 		}
 		else if (progress < 1) {
 			progress = 1;
@@ -83,7 +84,6 @@ window.onload = function init()  {
 			logo.style.opacity = 1 - progress;
 			footer.style.bottom = (-40 + 60 * progress) + "px";
 			backButton.style.top = (-170 + 200 * progress) + "px";
-			scrollIcon.style.opacity = 1 - progress * 2.0;
 		}
 	}
 }
