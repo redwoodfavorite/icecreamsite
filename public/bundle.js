@@ -16,7 +16,7 @@ module.exports = '<div class="outlined light-shadow press-container">\n' +
     '		<h1>San Franpsycho Winter Lookbook 2015</h1>\n' +
     '		<h3>November 2015</h3>\n' +
     '	</div>\n' +
-    '	<p>San Franpsycho Clothing chose Wild to be the song in their new winter catalog\n' +
+    '	<p>San Franpsycho Clothing chose Wild to be the song in their new winter catal0g\n' +
     '	</p>\n' +
     '	<p>\n' +
     '		<a href="http://sanfranpsycho.com/winter-2015/">-San Franpsycho </a>\n' +
@@ -119,7 +119,7 @@ module.exports = '<iframe class="light-shadow content-tile" width="540" height="
     '  <div id="tour-dates"></div>\n' +
     '</div>\n' +
     '\n' +
-    '<iframe style="border: 0; width: 540px; height: 655px;" class="light-shadow content-tile" src="https://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://icecreamlicks.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
+    '<iframe style="border: 0; width: 540px; height: 654px;" class="light-shadow content-tile" src="https://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://icecreamlicks.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
     '';
 },{}],4:[function(require,module,exports){
 // module.exports = (function(d, s, id) {
