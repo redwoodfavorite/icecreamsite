@@ -16,7 +16,7 @@ module.exports = '<div class="outlined light-shadow press-container">\n' +
     '		<h1>San Franpsycho Winter Lookbook 2015</h1>\n' +
     '		<h3>November 2015</h3>\n' +
     '	</div>\n' +
-    '	<p>San Franpsycho Clothing chose Wild to be the song in their new winter catal0g\n' +
+    '	<p>San Franpsycho Clothing chose &ldquo;Wild&rdquo; to be the song in their new winter catal0g\n' +
     '	</p>\n' +
     '	<p>\n' +
     '		<a href="http://sanfranpsycho.com/winter-2015/">-San Franpsycho </a>\n' +
