@@ -11,8 +11,7 @@ module.exports = '<img class="feed-image light-shadow" src="./images/feed/profil
     '<img class="feed-image light-shadow" src="./images/feed/tapes.jpg" />\n' +
     '';
 },{}],2:[function(require,module,exports){
-module.exports = '\n' +
-    '<div class="outlined light-shadow press-container">\n' +
+module.exports = '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
     '		<h1>San Franpsycho Winter Lookbook 2015</h1>\n' +
     '		<h3>November 2015</h3>\n' +
@@ -155,6 +154,7 @@ var templates = {
 }
 
 var facebookScript = require('./fbscript');
+var cached = {};
 
 window.onload = function init()  {
 	var songsButton      = document.getElementById('stuff-button');
@@ -173,6 +173,7 @@ window.onload = function init()  {
 	var progress = 0;
 	var max = 250;
 	var stickyPos;
+	var currentSection;
 
 	songsButton.onclick    = switchSection.bind(null, 'stuff', facebookScript);
 	picturesButton.onclick = switchSection.bind(null, 'pictures');
@@ -182,7 +183,24 @@ window.onload = function init()  {
 	switchSection('stuff', facebookScript);
 
 	function switchSection(section, script) {
-		sectionContainer.innerHTML = templates[section];
+		// Take previous section out of DOM
+		if (currentSection) {
+			console.log('removing ', currentSection)
+			sectionContainer.removeChild(currentSection);
+		}
+		// Put new element in DOM if existing
+		if (cached[section]) {
+			console.log('adding cached ', section);
+			sectionContainer.appendChild(cached[section]);
+		}
+		// Otherwise create and put element in DOM
+		else {
+			sectionContainer.innerHTML = '<div>' + templates[section] + '</div>';
+			cached[section] = sectionContainer.children[0];
+		}
+
+		currentSection = cached[section];
+
 		setTimeout(script, 300);
 
 		if (scrollY > stickyPos) {
