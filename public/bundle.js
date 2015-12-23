@@ -111,21 +111,43 @@ module.exports = '\n' +
 },{}],3:[function(require,module,exports){
 module.exports = '';
 },{}],4:[function(require,module,exports){
-module.exports = '<iframe class="light-shadow" width="540" height="315" src="https://www.youtube.com/embed/AEN1lVIyMaE" frameborder="0" allowfullscreen></iframe>\n' +
+module.exports = '<iframe class="light-shadow content-tile" width="540" height="315" src="https://www.youtube.com/embed/AEN1lVIyMaE" frameborder="0" allowfullscreen></iframe>\n' +
     '\n' +
-    '<iframe style="border: 0; width: 540px; height: 655px;" class="light-shadow" src="https://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://icecreamlicks.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
+    '<iframe style="border: 0; width: 540px; height: 655px;" class="light-shadow content-tile" src="https://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://icecreamlicks.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
     '\n' +
     '<div id="fb-root"></div>\n' +
-    '<div class="fb-page" data-href="https://www.facebook.com/icecreamlicks" data-tabs="timeline" data-height="500" data-small-header="false" data-width="540" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/icecreamlicks"><a href="https://www.facebook.com/icecreamlicks">ICE CREAM</a></blockquote></div></div>';
+    '<div class="fb-page content-tile" data-href="https://www.facebook.com/icecreamlicks" data-tabs="timeline" data-height="500" data-small-header="false" data-width="540" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/icecreamlicks"><a href="https://www.facebook.com/icecreamlicks">ICE CREAM</a></blockquote></div></div>\n' +
+    '\n' +
+    '<div class="light-shadow content-tile">\n' +
+    '  <!-- <a href="javascript:;" id="show-widget">Click to see Ice Cream events</a> -->\n' +
+    '  <div id="tour-dates"></div>\n' +
+    '</div>\n' +
+    '';
 },{}],5:[function(require,module,exports){
-module.exports = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  console.log(1)
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=196536770364038";
-  fjs.parentNode.insertBefore(js, fjs);
-}.bind(this, document, 'script', 'facebook-jssdk'));
+// module.exports = (function(d, s, id) {
+//   var js, fjs = d.getElementsByTagName(s)[0];
+//   if (d.getElementById(id)) return;
+//   js = d.createElement(s); js.id = id;
+//   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=196536770364038";
+//   fjs.parentNode.insertBefore(js, fjs);
+// }.bind(this, document, 'script', 'facebook-jssdk'));
+
+module.exports = function() {
+  new BIT.Widget({
+    "artist":"Ice Cream",
+    "div_id":"tour-dates",
+    "bg_color": "#FFFFFF"
+  }).insert_events();
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=196536770364038";
+    fjs.parentNode.insertBefore(js, fjs);
+  }.bind(this, document, 'script', 'facebook-jssdk')())
+}
+
 },{}],6:[function(require,module,exports){
 var templates = {
 	songs: require('../public/templates/songs.html'),
