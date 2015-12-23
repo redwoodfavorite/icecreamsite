@@ -1,17 +1,15 @@
 var templates = {
-	songs: require('../public/templates/songs.html'),
+	stuff: require('../public/templates/stuff.html'),
 	pictures: require('../public/templates/pictures.html'),
 	press: require('../public/templates/press.html'),
-	shows: require('../public/templates/shows.html')
 }
 
 var facebookScript = require('./fbscript');
 
 window.onload = function init()  {
-	var songsButton      = document.getElementById('songs-button');
+	var songsButton      = document.getElementById('stuff-button');
 	var picturesButton   = document.getElementById('pictures-button');
 	var pressButton      = document.getElementById('press-button');
-	var showsButton      = document.getElementById('shows-button');
 	var contentDiv       = document.getElementById('content');
 	var logo             = document.getElementById('logo');
 	var menu             = document.getElementById('menu');
@@ -26,13 +24,12 @@ window.onload = function init()  {
 	var max = 250;
 	var stickyPos;
 
-	songsButton.onclick    = switchSection.bind(null, 'songs', facebookScript);
+	songsButton.onclick    = switchSection.bind(null, 'stuff', facebookScript);
 	picturesButton.onclick = switchSection.bind(null, 'pictures');
 	pressButton.onclick    = switchSection.bind(null, 'press');
-	showsButton.onclick    = switchSection.bind(null, 'shows');
 
 	handleScroll();
-	switchSection('songs', facebookScript);
+	switchSection('stuff', facebookScript);
 
 	function switchSection(section, script) {
 		sectionContainer.innerHTML = templates[section];

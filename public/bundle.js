@@ -109,21 +109,20 @@ module.exports = '\n' +
     '</div>\n' +
     '';
 },{}],3:[function(require,module,exports){
-module.exports = '';
-},{}],4:[function(require,module,exports){
 module.exports = '<iframe class="light-shadow content-tile" width="540" height="315" src="https://www.youtube.com/embed/AEN1lVIyMaE" frameborder="0" allowfullscreen></iframe>\n' +
     '\n' +
-    '<iframe style="border: 0; width: 540px; height: 655px;" class="light-shadow content-tile" src="https://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://icecreamlicks.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
-    '\n' +
-    '<div id="fb-root"></div>\n' +
-    '<div class="fb-page content-tile" data-href="https://www.facebook.com/icecreamlicks" data-tabs="timeline" data-height="500" data-small-header="false" data-width="540" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/icecreamlicks"><a href="https://www.facebook.com/icecreamlicks">ICE CREAM</a></blockquote></div></div>\n' +
-    '\n' +
+    '<div class="content-tile light-shadow">\n' +
+    '  <div id="fb-root"></div>\n' +
+    '  <div class="fb-page" data-href="https://www.facebook.com/icecreamlicks" data-tabs="timeline" data-height="500" data-small-header="false" data-width="540" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/icecreamlicks"><a href="https://www.facebook.com/icecreamlicks">ICE CREAM</a></blockquote></div></div>\n' +
+    '</div>\n' +
     '<div class="light-shadow content-tile">\n' +
-    '  <!-- <a href="javascript:;" id="show-widget">Click to see Ice Cream events</a> -->\n' +
+    '  <!-- <a href="javascript:;" id="show-widget">Click to see I events</a> -->\n' +
     '  <div id="tour-dates"></div>\n' +
     '</div>\n' +
+    '\n' +
+    '<iframe style="border: 0; width: 540px; height: 655px;" class="light-shadow content-tile" src="https://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://icecreamlicks.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
     '';
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 // module.exports = (function(d, s, id) {
 //   var js, fjs = d.getElementsByTagName(s)[0];
 //   if (d.getElementById(id)) return;
@@ -148,21 +147,19 @@ module.exports = function() {
   }.bind(this, document, 'script', 'facebook-jssdk')())
 }
 
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 var templates = {
-	songs: require('../public/templates/songs.html'),
+	stuff: require('../public/templates/stuff.html'),
 	pictures: require('../public/templates/pictures.html'),
 	press: require('../public/templates/press.html'),
-	shows: require('../public/templates/shows.html')
 }
 
 var facebookScript = require('./fbscript');
 
 window.onload = function init()  {
-	var songsButton      = document.getElementById('songs-button');
+	var songsButton      = document.getElementById('stuff-button');
 	var picturesButton   = document.getElementById('pictures-button');
 	var pressButton      = document.getElementById('press-button');
-	var showsButton      = document.getElementById('shows-button');
 	var contentDiv       = document.getElementById('content');
 	var logo             = document.getElementById('logo');
 	var menu             = document.getElementById('menu');
@@ -177,13 +174,12 @@ window.onload = function init()  {
 	var max = 250;
 	var stickyPos;
 
-	songsButton.onclick    = switchSection.bind(null, 'songs', facebookScript);
+	songsButton.onclick    = switchSection.bind(null, 'stuff', facebookScript);
 	picturesButton.onclick = switchSection.bind(null, 'pictures');
 	pressButton.onclick    = switchSection.bind(null, 'press');
-	showsButton.onclick    = switchSection.bind(null, 'shows');
 
 	handleScroll();
-	switchSection('songs', facebookScript);
+	switchSection('stuff', facebookScript);
 
 	function switchSection(section, script) {
 		sectionContainer.innerHTML = templates[section];
@@ -239,4 +235,4 @@ window.onload = function init()  {
 	}
 }
 
-},{"../public/templates/pictures.html":1,"../public/templates/press.html":2,"../public/templates/shows.html":3,"../public/templates/songs.html":4,"./fbscript":5}]},{},[6]);
+},{"../public/templates/pictures.html":1,"../public/templates/press.html":2,"../public/templates/stuff.html":3,"./fbscript":4}]},{},[5]);
