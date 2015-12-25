@@ -13,6 +13,16 @@ module.exports = '<img class="feed-image light-shadow" src="./images/feed/profil
 },{}],2:[function(require,module,exports){
 module.exports = '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
+    '		<h1>The Deli Magazine\'s Top 10 of 2015</h1>\n' +
+    '		<h3>December 2015</h3>\n' +
+    '	</div>\n' +
+    '	<p>&ldquo;Dirty, honest guitar riffs, quick, aggressive drum patterns, weaved into gritty barely-there vocals, Ice Cream is the perfect combination of garage sound and punk attitude that will pour gasoline on that flickering fire inside.&rdquo;</p>\n' +
+    '	<p>\n' +
+    '		<a href="http://sf.thedelimagazine.com/">-The Deli </a>\n' +
+    '	</p>\n' +
+    '</div>\n' +
+    '<div class="outlined light-shadow press-container">\n' +
+    '	<div class="press-header">\n' +
     '		<h1>San Franpsycho Winter Lookbook 2015</h1>\n' +
     '		<h3>November 2015</h3>\n' +
     '	</div>\n' +
