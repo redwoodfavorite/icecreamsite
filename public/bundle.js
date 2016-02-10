@@ -219,14 +219,16 @@ window.onload = function init()  {
 
 		currentSection = cached[section];
 
-		setTimeout(script, 300);
+		if (script != null) {
+			setTimeout(script, 100);
+		} else {
+			document.getElementById("menu").classList.add("sticky");
+		}
 
 		if (scrollY > stickyPos) {
 			scrollY = stickyPos;
 			document.body.scrollTop = stickyPos;
 		}
-
-		document.getElementById("menu").classList.add("sticky");
 	}
 
 	window.onscroll = handleScroll;
