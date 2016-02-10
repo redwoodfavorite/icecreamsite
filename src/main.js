@@ -59,13 +59,16 @@ window.onload = function init()  {
 		setTimeout(script, 100);
 
 		if (!staystill) {
-			document.getElementById("menu").classList.add("sticky");
+			menu.className = "sticky";
+			sectionContainer.className += " pushed";
 		}
 
+		/*
 		if (scrollY > stickyPos) {
 			scrollY = stickyPos;
 			document.body.scrollTop = stickyPos;
 		}
+		*/
 	}
 
 	window.onscroll = handleScroll;
