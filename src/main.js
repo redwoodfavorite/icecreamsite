@@ -35,9 +35,9 @@ window.onload = function init()  {
 	contactButton.onclick    = switchSection.bind(null, 'contact');
 
 	handleScroll();
-	switchSection('stuff', facebookScript);
+	switchSection('stuff', facebookScript, true);
 
-	function switchSection(section, script) {
+	function switchSection(section, script, staystill) {
 		// Take previous section out of DOM
 		if (currentSection) {
 			console.log('removing ', currentSection)
@@ -56,10 +56,10 @@ window.onload = function init()  {
 
 		currentSection = cached[section];
 
-		if (script != null) {
-			setTimeout(script, 100);
-		} else {
-			document.getElementById("menu").classList.add("sticky");
+		setTimeout(script, 100);
+
+		if (!staystill) {
+			document.getElementById("menu").classList.toggle("sticky");
 		}
 
 		if (scrollY > stickyPos) {
