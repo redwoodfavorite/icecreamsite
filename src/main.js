@@ -62,6 +62,8 @@ window.onload = function init()  {
 			scrollY = stickyPos;
 			document.body.scrollTop = stickyPos;
 		}
+
+		document.getElementById("menu").classList.add("sticky");
 	}
 
 	window.onscroll = handleScroll;
