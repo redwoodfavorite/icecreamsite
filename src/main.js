@@ -59,7 +59,7 @@ window.onload = function init()  {
 		setTimeout(script, 100);
 
 		if (!staystill) {
-			document.getElementById("menu").classList.toggle("sticky");
+			document.getElementById("menu").classList.add("sticky");
 		}
 
 		if (scrollY > stickyPos) {
