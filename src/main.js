@@ -2,6 +2,7 @@ var templates = {
 	stuff: require('../public/templates/stuff.html'),
 	pictures: require('../public/templates/pictures.html'),
 	press: require('../public/templates/press.html'),
+	contact: require('../public/templates/contact.html'),
 }
 
 var facebookScript = require('./fbscript');
@@ -11,6 +12,7 @@ window.onload = function init()  {
 	var songsButton      = document.getElementById('stuff-button');
 	var picturesButton   = document.getElementById('pictures-button');
 	var pressButton      = document.getElementById('press-button');
+	var contactButton      = document.getElementById('contact-button');
 	var contentDiv       = document.getElementById('content');
 	var logo             = document.getElementById('logo');
 	var menu             = document.getElementById('menu');
@@ -29,6 +31,7 @@ window.onload = function init()  {
 	songsButton.onclick    = switchSection.bind(null, 'stuff', facebookScript);
 	picturesButton.onclick = switchSection.bind(null, 'pictures');
 	pressButton.onclick    = switchSection.bind(null, 'press');
+	contactButton.onclick    = switchSection.bind(null, 'contact');
 
 	handleScroll();
 	switchSection('stuff', facebookScript);

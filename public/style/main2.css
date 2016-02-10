@@ -14,20 +14,20 @@ body::after {
 }
 
 h1 {
-	font-size: 38px;
+	font-size: 30px;
 	padding-top: 30px;
 	padding-bottom: 10px;
     font-weight: bold;
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 40px;
 	line-height: 26px;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 img#scroll-icon {
@@ -117,7 +117,7 @@ ul#menu {
 	margin-right: auto;
 	padding: 15px 0px;
 	width: 100%;
-	font-size: 18px;
+	font-size: 14px;
 	z-index: 1000;
 }
 
