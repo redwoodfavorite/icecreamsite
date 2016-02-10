@@ -12,6 +12,7 @@ window.onload = function init()  {
 	var songsButton      = document.getElementById('stuff-button');
 	var picturesButton   = document.getElementById('pictures-button');
 	var pressButton      = document.getElementById('press-button');
+
 	var contactButton      = document.getElementById('contact-button');
 	var contentDiv       = document.getElementById('content');
 	var logo             = document.getElementById('logo');

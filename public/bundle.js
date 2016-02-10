@@ -1,4 +1,8 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+module.exports = '<p>bookus the magic dragon: <a href="mailto:erinwebb.mgmt@gmail.com">erinwebb.mgmt@gmail.com</a></p>\n' +
+    '<p>ask da boys: <a href="mailto:thebandicecream@gmail.com">thebandicecream@gmail.com</a></p>\n' +
+    '';
+},{}],2:[function(require,module,exports){
 module.exports = '<img class="feed-image light-shadow" src="./images/feed/profile1.jpg" />\n' +
     '<img class="feed-image light-shadow" src="./images/feed/BOTH1.jpg" />\n' +
     '<img class="feed-image light-shadow" src="./images/feed/BOTH2.jpg" />\n' +
@@ -10,7 +14,7 @@ module.exports = '<img class="feed-image light-shadow" src="./images/feed/profil
     '<img class="feed-image light-shadow" src="./images/feed/parkside.jpg" />\n' +
     '<img class="feed-image light-shadow" src="./images/feed/tapes.jpg" />\n' +
     '';
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 module.exports = '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
     '		<h1>The Deli Magazine\'s Top 10 of 2015</h1>\n' +
@@ -117,7 +121,7 @@ module.exports = '<div class="outlined light-shadow press-container">\n' +
     '	</p>\n' +
     '</div>\n' +
     '';
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 module.exports = '<iframe class="light-shadow content-tile" width="540" height="315" src="https://www.youtube.com/embed/AEN1lVIyMaE" frameborder="0" allowfullscreen></iframe>\n' +
     '\n' +
     '<div class="content-tile light-shadow">\n' +
@@ -131,7 +135,7 @@ module.exports = '<iframe class="light-shadow content-tile" width="540" height="
     '\n' +
     '<iframe style="border: 0; width: 540px; height: 654px;" class="light-shadow content-tile" src="https://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://icecreamlicks.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
     '';
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 // module.exports = (function(d, s, id) {
 //   var js, fjs = d.getElementsByTagName(s)[0];
 //   if (d.getElementById(id)) return;
@@ -156,11 +160,12 @@ module.exports = function() {
   }.bind(this, document, 'script', 'facebook-jssdk')())
 }
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 var templates = {
 	stuff: require('../public/templates/stuff.html'),
 	pictures: require('../public/templates/pictures.html'),
 	press: require('../public/templates/press.html'),
+	contact: require('../public/templates/contact.html'),
 }
 
 var facebookScript = require('./fbscript');
@@ -170,6 +175,8 @@ window.onload = function init()  {
 	var songsButton      = document.getElementById('stuff-button');
 	var picturesButton   = document.getElementById('pictures-button');
 	var pressButton      = document.getElementById('press-button');
+
+	var contactButton      = document.getElementById('contact-button');
 	var contentDiv       = document.getElementById('content');
 	var logo             = document.getElementById('logo');
 	var menu             = document.getElementById('menu');
@@ -188,6 +195,7 @@ window.onload = function init()  {
 	songsButton.onclick    = switchSection.bind(null, 'stuff', facebookScript);
 	picturesButton.onclick = switchSection.bind(null, 'pictures');
 	pressButton.onclick    = switchSection.bind(null, 'press');
+	contactButton.onclick    = switchSection.bind(null, 'contact');
 
 	handleScroll();
 	switchSection('stuff', facebookScript);
@@ -263,4 +271,4 @@ window.onload = function init()  {
 	}
 }
 
-},{"../public/templates/pictures.html":1,"../public/templates/press.html":2,"../public/templates/stuff.html":3,"./fbscript":4}]},{},[5]);
+},{"../public/templates/contact.html":1,"../public/templates/pictures.html":2,"../public/templates/press.html":3,"../public/templates/stuff.html":4,"./fbscript":5}]},{},[6]);
