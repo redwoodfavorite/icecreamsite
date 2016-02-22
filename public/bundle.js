@@ -22,7 +22,7 @@ module.exports = '<div class="outlined light-shadow press-container">\n' +
     '	</div>\n' +
     '	<p>&ldquo;Dirty, honest guitar riffs, quick, aggressive drum patterns, weaved into gritty barely-there vocals, Ice Cream is the perfect combination of garage sound and punk attitude that will pour gasoline on that flickering fire inside.&rdquo;</p>\n' +
     '	<p>\n' +
-    '		<a href="http://sf.thedelimagazine.com/">-The Deli </a>\n' +
+    '		<a href="http://sf.thedelimagazine.com/23517/10-best-bay-area-albums-2015/">-The Deli </a>\n' +
     '	</p>\n' +
     '</div>\n' +
     '<div class="outlined light-shadow press-container">\n' +
