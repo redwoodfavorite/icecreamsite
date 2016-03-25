@@ -17,6 +17,16 @@ module.exports = '<img class="feed-image light-shadow" src="./images/feed/profil
 },{}],3:[function(require,module,exports){
 module.exports = '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
+    '		<h1>&lsquo;Seventeen&rsquo Premiere</h1>\n' +
+    '		<h3>March 2016</h3>\n' +
+    '	</div>\n' +
+    '	<p>Perfect garage vibes, peppy lyrics and a generally snarky presence — all attributes contributing to our newfound love of San Francisco’s Ice Cream.</p>\n' +
+    '	<p>\n' +
+    '		<a href="http://www.thewildhoneypie.com/san-franciscos-ice-cream-premieres-newest-track-seventeen-stream/">-The Wild Honey Bee </a>\n' +
+    '	</p>\n' +
+    '</div>\n' +
+    '<div class="outlined light-shadow press-container">\n' +
+    '	<div class="press-header">\n' +
     '		<h1>The Deli Magazine\'s Top 10 of 2015</h1>\n' +
     '		<h3>December 2015</h3>\n' +
     '	</div>\n' +
