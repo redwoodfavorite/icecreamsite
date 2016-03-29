@@ -135,7 +135,8 @@ module.exports = '<div class="outlined light-shadow press-container">\n' +
     '</div>\n' +
     '';
 },{}],4:[function(require,module,exports){
-module.exports = '<iframe class="light-shadow content-tile" width="540" height="315" src="https://www.youtube.com/embed/AEN1lVIyMaE" frameborder="0" allowfullscreen></iframe>\n' +
+module.exports = '<p><a href="http://www.thewildhoneypie.com/san-franciscos-ice-cream-premieres-newest-track-seventeen-stream/">New Single &ldquo;SEVENTEEN&rdquo; premiered on Wild Honey Pie!!</a></p>\n' +
+    '<iframe class="light-shadow content-tile" width="540" height="315" src="https://www.youtube.com/embed/AEN1lVIyMaE" frameborder="0" allowfullscreen></iframe>\n' +
     '\n' +
     '<div class="content-tile light-shadow">\n' +
     '  <div id="fb-root"></div>\n' +
