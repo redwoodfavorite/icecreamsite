@@ -6,7 +6,8 @@ module.exports = '<p><!--hokus book-us: <a href="mailto:erinwebb.mgmt@gmail.com"
     '</p>\n' +
     '';
 },{}],2:[function(require,module,exports){
-module.exports = '<img class="feed-image light-shadow" src="./images/feed/bryce.jpg" />\n' +
+module.exports = '<img class="feed-image light-shadow" src="./images/feed/cave.png" />\n' +
+    '<img class="feed-image light-shadow" src="./images/feed/bryce.jpg" />\n' +
     '<img class="feed-image light-shadow" src="./images/feed/louie.jpg" />\n' +
     '<img class="feed-image light-shadow" src="./images/feed/joe.jpg" />\n' +
     '<img class="feed-image light-shadow" src="./images/feed/kevin.jpg" />\n' +
