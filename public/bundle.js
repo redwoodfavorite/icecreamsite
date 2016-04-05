@@ -27,6 +27,16 @@ module.exports = '<img class="feed-image light-shadow" src="./images/feed/cave.p
 },{}],3:[function(require,module,exports){
 module.exports = '<div class="outlined light-shadow press-container">\n' +
     '	<div class="press-header">\n' +
+    '		<h1>Visions Magazin Germany: Discovered</h1>\n' +
+    '		<h3>April 2016</h3>\n' +
+    '	</div>\n' +
+    '	<p>Already last year, catapulting Ice Cream in her hometown of San Francisco with the laconically titled cassette EP "We\'re set" on the musical map between sunny indie rock, biting Fuzz, Slackertum and rattling garage rock. Now the band with the single "Seventeen" has refilled, commutes almost seven minutes delightfully askew between drunken Surf Rock, Rock\'n\'Roll "Ohohohs" Strokes moments and Catchy indie Fuzzpop.</p>\n' +
+    '	<p>\n' +
+    '		<a href="http://www.visions.de/news/24754/Vormerken-Unsere-aktuellen-Neuentdeckungen">-VISIONS Magazin Germany</a>\n' +
+    '	</p>\n' +
+    '</div>\n' +
+    '<div class="outlined light-shadow press-container">\n' +
+    '	<div class="press-header">\n' +
     '		<h1>&ldquo;Seventeen&rdquo; - New Track Premiere</h1>\n' +
     '		<h3>March 2016</h3>\n' +
     '	</div>\n' +
