@@ -158,7 +158,7 @@ module.exports = '<p><a href="http://www.thewildhoneypie.com/san-franciscos-ice-
     '\n' +
     '<div class="content-tile light-shadow">\n' +
     '  <div id="fb-root"></div>\n' +
-    '  <div class="fb-page" data-href="https://www.facebook.com/thebandicecream" data-tabs="timeline" data-height="500" data-small-header="false" data-width="540" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/thebandicecream"><a href="https://www.facebook.com/thebandicecream">ICE CREAM</a></blockquote></div></div>\n' +
+    '  <div class="fb-page" data-href="https://www.facebook.com/thebandicecream/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/thebandicecream/"><a href="https://www.facebook.com/thebandicecream/">ICE CREAM</a></blockquote></div></div>\n' +
     '</div>\n' +
     '<div class="light-shadow content-tile">\n' +
     '  <!-- <a href="javascript:;" id="show-widget">Click to see I events</a> -->\n' +
