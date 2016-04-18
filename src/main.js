@@ -9,11 +9,13 @@ var facebookScript = require('./fbscript');
 var cached = {};
 
 window.onload = function init()  {
-	var songsButton      = document.getElementById('stuff-button');
-	var picturesButton   = document.getElementById('pictures-button');
-	var pressButton      = document.getElementById('press-button');
+	var buttons = {
+			stuff: document.getElementById('stuff-button'),
+			pictures: document.getElementById('pictures-button'),
+			press: document.getElementById('press-button'),
+			contact: document.getElementById('contact-button')
+	};
 
-	var contactButton      = document.getElementById('contact-button');
 	var contentDiv       = document.getElementById('content');
 	var logo             = document.getElementById('logo');
 	var menu             = document.getElementById('menu');
@@ -23,29 +25,30 @@ window.onload = function init()  {
 	var backButton       = document.getElementById('back');
 
 	var stickyState = true;
+	var logoSticky = true;
 	var scrollY = 0;
 	var progress = 0;
 	var max = 250;
 	var stickyPos;
 	var currentSection;
+	var selectedButton;
 
-	songsButton.onclick    = switchSection.bind(null, 'stuff', facebookScript);
-	picturesButton.onclick = switchSection.bind(null, 'pictures');
-	pressButton.onclick    = switchSection.bind(null, 'press');
-	contactButton.onclick    = switchSection.bind(null, 'contact');
+	buttons['stuff'].addEventListener('click', switchSection.bind(null, 'stuff', facebookScript));
+	buttons['pictures'].addEventListener('click', switchSection.bind(null, 'pictures', null));
+	buttons['press'].addEventListener('click', switchSection.bind(null, 'press', null));
+	buttons['contact'].addEventListener('click', switchSection.bind(null, 'contact', null));
 
 	handleScroll();
-	switchSection('stuff', facebookScript, true);
+	switchSection('stuff', facebookScript);
 
-	function switchSection(section, script, staystill) {
+	function switchSection(section, script) {
+
 		// Take previous section out of DOM
 		if (currentSection) {
-			console.log('removing ', currentSection)
 			sectionContainer.removeChild(currentSection);
 		}
 		// Put new element in DOM if existing
 		if (cached[section]) {
-			console.log('adding cached ', section);
 			sectionContainer.appendChild(cached[section]);
 		}
 		// Otherwise create and put element in DOM
@@ -56,26 +59,32 @@ window.onload = function init()  {
 
 		currentSection = cached[section];
 
+		if (selectedButton) {
+				selectedButton.className = '';
+		}
+		selectedButton = buttons[section];
+		selectedButton.className = 'selected';
+
 		setTimeout(script, 100);
-
-		if (!staystill) {
-			menu.className = "sticky";
-			sectionContainer.className += " pushed";
-		}
-
-		/*
-		if (scrollY > stickyPos) {
-			scrollY = stickyPos;
-			document.body.scrollTop = stickyPos;
-		}
-		*/
 	}
 
-	window.onscroll = handleScroll;
+	/*
+		Handle scroll
+	*/
+
+	requestAnimationFrame(onTick);
+
+	function onTick() {
+		if (document.body.scrollTop !== scrollY) {
+			handleScroll();
+		}
+
+		requestAnimationFrame(onTick);
+	}
 
 	function handleScroll(e) {
 		scrollY = document.body.scrollTop;
-		stickyPos = innerHeight - 50;
+		stickyPos = 410 - 60;
 
 		/*
 			Handle sticky-ness of menu-bar
@@ -98,17 +107,18 @@ window.onload = function init()  {
 			Adjust logo opacity, footer position, and top logo position on scroll
 		*/
 
+		// comment out this to return scroll behavior
+		max = 0;
+
 		if (scrollY < max) {
 			progress = scrollY / max;
 
-			logo.style.opacity = 1 - progress;
 			footer.style.bottom = (-40 + 60 * progress) + "px";
 			backButton.style.top = (-170 + 200 * progress) + "px";
 		}
 		else if (progress < 1) {
 			progress = 1;
 
-			logo.style.opacity = 1 - progress;
 			footer.style.bottom = (-40 + 60 * progress) + "px";
 			backButton.style.top = (-170 + 200 * progress) + "px";
 		}

@@ -1,9 +1,14 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-module.exports = '<p><!--hokus book-us: <a href="mailto:erinwebb.mgmt@gmail.com">erinwebb.mgmt@gmail.com</a>-->\n' +
-    'ask da boys: <a href="mailto:thebandicecream@gmail.com">thebandicecream@gmail.com</a>\n' +
-    '<br/>\n' +
-    'im-press us: <a href="mailto:john@babyrobotmedia.com">john@babyrobotmedia.com</a>\n' +
-    '</p>\n' +
+module.exports = '<div class="content-tile light-shadow">\n' +
+    '  <div class="press-header">\n' +
+    '		<h1>hey</h1>\n' +
+    '	</div>\n' +
+    '  <p><!--hokus book-us: <a href="mailto:erinwebb.mgmt@gmail.com">erinwebb.mgmt@gmail.com</a>-->\n' +
+    '  ask da boys: <a href="mailto:thebandicecream@gmail.com">thebandicecream@gmail.com</a>\n' +
+    '  <br/>\n' +
+    '  im-press us: <a href="mailto:john@babyrobotmedia.com">john@babyrobotmedia.com</a>\n' +
+    '  </p>\n' +
+    '</div>\n' +
     '';
 },{}],2:[function(require,module,exports){
 module.exports = '<img class="feed-image light-shadow" src="./images/feed/liverick.jpg" />\n' +
@@ -153,19 +158,49 @@ module.exports = '<div class="outlined light-shadow press-container">\n' +
     '</div>\n' +
     '';
 },{}],4:[function(require,module,exports){
-module.exports = '<p><a href="http://www.thewildhoneypie.com/san-franciscos-ice-cream-premieres-newest-track-seventeen-stream/">New Single &ldquo;SEVENTEEN&rdquo; premiered on Wild Honey Pie!!</a></p>\n' +
-    '<iframe class="light-shadow content-tile" width="540" height="315" src="https://www.youtube.com/embed/AEN1lVIyMaE" frameborder="0" allowfullscreen></iframe>\n' +
+module.exports = '<div class="content-tile light-shadow">\n' +
+    '  <div class="press-header">\n' +
+    '		<h1>&ldquo;Seventeen&rdquo; - First track from the album! </h1>\n' +
+    '		<h3>~ March 2016 ~</h3>\n' +
+    '	</div>\n' +
+    '	<p> First track off the new album hold on to your butt it\'s over 6 minutes long. This here\'s just a glimpse of garage-rock pop sounds from the our first full-length.</p>\n' +
+    '  <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/249600573&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>\n' +
+    '</div>\n' +
     '\n' +
     '<div class="content-tile light-shadow">\n' +
-    '  <div id="fb-root"></div>\n' +
-    '  <div class="fb-page" data-href="https://www.facebook.com/thebandicecream" data-tabs="timeline" data-height="500" data-small-header="false" data-width="540" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/thebandicecream"><a href="https://www.facebook.com/thebandicecream">ICE CREAM</a></blockquote></div></div>\n' +
+    '  <div class="press-header">\n' +
+    '    <h1>&ldquo;Wild&rdquo; - Music Video </h1>\n' +
+    '    <h3>September 2015</h3>\n' +
+    '  </div>\n' +
+    '  <p> Check out our vampire themed music vidya to "Wild".  Thanks to Chantel Beam and the rest for shooting this guy- it was a blast. </p>\n' +
+    '  <iframe width="500" height="315" src="https://www.youtube.com/embed/AEN1lVIyMaE" frameborder="0" allowfullscreen></iframe>\n' +
     '</div>\n' +
+    '\n' +
+    '<div class="content-tile light-shadow">\n' +
+    '  <div class="press-header">\n' +
+    '    <h1>Facebook - Follow us </h1>\n' +
+    '    <h3>Don\'t think! Just do it!</h3>\n' +
+    '  </div>\n' +
+    '  <div id="fb-root"></div>\n' +
+    '  <div class="fb-page" width="500" data-href="https://www.facebook.com/thebandicecream/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/thebandicecream/"><a href="https://www.facebook.com/thebandicecream/">ICE CREAM</a></blockquote></div></div>\n' +
+    '</div>\n' +
+    '\n' +
     '<div class="light-shadow content-tile">\n' +
-    '  <!-- <a href="javascript:;" id="show-widget">Click to see I events</a> -->\n' +
+    '  <div class="press-header">\n' +
+    '    <h1>Upcoming Shows</h1>\n' +
+    '    <h3>See us live.  In the nude!</h3>\n' +
+    '  </div>\n' +
     '  <div id="tour-dates"></div>\n' +
     '</div>\n' +
     '\n' +
-    '<iframe style="border: 0; width: 540px; height: 654px;" class="light-shadow content-tile" src="https://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://icecreamlicks.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
+    '<div class="content-tile light-shadow">\n' +
+    '  <div class="press-header">\n' +
+    '    <h1>&ldquo;Ice Cream EP&rdquo; - Download now! FREE!? </h1>\n' +
+    '    <h3>January 2015</h3>\n' +
+    '  </div>\n' +
+    '  <p> Excited to say our first 5 tunes are ready to be injected right into your earholes.  Recorded at Carny Studios in SF with the one and only Mike Carnahan.  Give it a listen. </p>\n' +
+    '  <iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=4230529859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://thebandicecream.bandcamp.com/album/were-set">We&#39;re set by Ice Cream</a></iframe>\n' +
+    '</div>\n' +
     '';
 },{}],5:[function(require,module,exports){
 // module.exports = (function(d, s, id) {
@@ -204,11 +239,13 @@ var facebookScript = require('./fbscript');
 var cached = {};
 
 window.onload = function init()  {
-	var songsButton      = document.getElementById('stuff-button');
-	var picturesButton   = document.getElementById('pictures-button');
-	var pressButton      = document.getElementById('press-button');
+	var buttons = {
+			stuff: document.getElementById('stuff-button'),
+			pictures: document.getElementById('pictures-button'),
+			press: document.getElementById('press-button'),
+			contact: document.getElementById('contact-button')
+	};
 
-	var contactButton      = document.getElementById('contact-button');
 	var contentDiv       = document.getElementById('content');
 	var logo             = document.getElementById('logo');
 	var menu             = document.getElementById('menu');
@@ -218,29 +255,30 @@ window.onload = function init()  {
 	var backButton       = document.getElementById('back');
 
 	var stickyState = true;
+	var logoSticky = true;
 	var scrollY = 0;
 	var progress = 0;
 	var max = 250;
 	var stickyPos;
 	var currentSection;
+	var selectedButton;
 
-	songsButton.onclick    = switchSection.bind(null, 'stuff', facebookScript);
-	picturesButton.onclick = switchSection.bind(null, 'pictures');
-	pressButton.onclick    = switchSection.bind(null, 'press');
-	contactButton.onclick    = switchSection.bind(null, 'contact');
+	buttons['stuff'].addEventListener('click', switchSection.bind(null, 'stuff', facebookScript));
+	buttons['pictures'].addEventListener('click', switchSection.bind(null, 'pictures', null));
+	buttons['press'].addEventListener('click', switchSection.bind(null, 'press', null));
+	buttons['contact'].addEventListener('click', switchSection.bind(null, 'contact', null));
 
 	handleScroll();
-	switchSection('stuff', facebookScript, true);
+	switchSection('stuff', facebookScript);
 
-	function switchSection(section, script, staystill) {
+	function switchSection(section, script) {
+
 		// Take previous section out of DOM
 		if (currentSection) {
-			console.log('removing ', currentSection)
 			sectionContainer.removeChild(currentSection);
 		}
 		// Put new element in DOM if existing
 		if (cached[section]) {
-			console.log('adding cached ', section);
 			sectionContainer.appendChild(cached[section]);
 		}
 		// Otherwise create and put element in DOM
@@ -251,26 +289,32 @@ window.onload = function init()  {
 
 		currentSection = cached[section];
 
+		if (selectedButton) {
+				selectedButton.className = '';
+		}
+		selectedButton = buttons[section];
+		selectedButton.className = 'selected';
+
 		setTimeout(script, 100);
-
-		if (!staystill) {
-			menu.className = "sticky";
-			sectionContainer.className += " pushed";
-		}
-
-		/*
-		if (scrollY > stickyPos) {
-			scrollY = stickyPos;
-			document.body.scrollTop = stickyPos;
-		}
-		*/
 	}
 
-	window.onscroll = handleScroll;
+	/*
+		Handle scroll
+	*/
+
+	requestAnimationFrame(onTick);
+
+	function onTick() {
+		if (document.body.scrollTop !== scrollY) {
+			handleScroll();
+		}
+
+		requestAnimationFrame(onTick);
+	}
 
 	function handleScroll(e) {
 		scrollY = document.body.scrollTop;
-		stickyPos = innerHeight - 50;
+		stickyPos = 410 - 60;
 
 		/*
 			Handle sticky-ness of menu-bar
@@ -293,17 +337,18 @@ window.onload = function init()  {
 			Adjust logo opacity, footer position, and top logo position on scroll
 		*/
 
+		// comment out this to return scroll behavior
+		max = 0;
+
 		if (scrollY < max) {
 			progress = scrollY / max;
 
-			logo.style.opacity = 1 - progress;
 			footer.style.bottom = (-40 + 60 * progress) + "px";
 			backButton.style.top = (-170 + 200 * progress) + "px";
 		}
 		else if (progress < 1) {
 			progress = 1;
 
-			logo.style.opacity = 1 - progress;
 			footer.style.bottom = (-40 + 60 * progress) + "px";
 			backButton.style.top = (-170 + 200 * progress) + "px";
 		}
